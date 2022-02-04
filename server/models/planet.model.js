@@ -28,7 +28,7 @@ function loadPlanetsData() {
                 reject(err)
             })
             .on('end', () => {
-                console.log('Done Parsing...');
+                console.log('Done Parsing Exo Planets Data from CSV File');
                 resolve()
             })
 
