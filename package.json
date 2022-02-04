@@ -1,0 +1,26 @@
+{
+  "name": "nasa-space-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server" : "npm install --prefix server",
+    "install-client" : "npm install --prefix client",
+    "install" : " npm run install-client  && npm run install-server",
+    "server" : "cd server && npm run watch",
+    "client" : "npm start --prefix client",
+    "watch" : "npm run server & npm run client ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyCookey/nasa-space-api-client-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyCookey/nasa-space-api-client-app/issues"
+  },
+  "homepage": "https://github.com/TonyCookey/nasa-space-api-client-app#readme"
+}
