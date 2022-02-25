@@ -9,6 +9,8 @@ jobs:
     env:
       CI: true
       MONGO_URL: mongodb://localhost/nasa
+      DEFAULT_PAGE_LIMIT: 0
+      DEFAULT_PAGE_NUMBER: 1
     strategy:
       matrix:
         node-version: [14.x, 16.x]
