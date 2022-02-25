@@ -4,9 +4,10 @@ const {
     mongoConnect,
     mongoDisconnect,
 } = require('../services/mongo');
-const {
-    loadPlanetsData,
-} = require('../models/planet.model');
+
+// const {
+//     loadPlanetsData,
+// } = require('../models/planet.model');
 
 describe('Launches API', () => {
     beforeAll(async () => {
@@ -20,7 +21,7 @@ describe('Launches API', () => {
 
     describe('Test GET /launches', () => {
         test('It should respond with 200 success', async () => {
-            const response = await request(app)
+            await request(app)
                 .get('/launches')
                 .expect('Content-Type', /json/)
                 .expect(200);
